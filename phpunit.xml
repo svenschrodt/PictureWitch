@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--**
+ * P7Graph
+ *
+ * PHPUnit configuration file for testing units of P7Graph
+ *
+ * @author Sven Schrodt<sven@schrodt-service.net>
+ * @package P7Tools
+ * @link https://github.com/svenschrodt/P7Graph
+ * @link https://travis-ci.org/svenschrodt/P7Graph
+ * @license https://github.com/svenschrodt/P7Graph/blob/master/LICENSE.md
+ * @copyright Sven Schrodt<sven@schrodt-service.net>
+ * @version 0.1
+ * @since 2020-02-19
+ */-->
+
+
+<phpunit bootstrap="Bootstrap.php" colors="true" verbose="true">
+	<php>
+        <env name="PROJECT_NAME" value="P7Graph"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Testing P7Graph">
+            <directory>./test/</directory>
+        </testsuite>
+    </testsuites>
+  <!--  Rules for code coverage -->
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./src/public</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

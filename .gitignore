@@ -1,2 +1,19 @@
-/cache/
-/config/development/
+# local temp. data
+/public/cache/
+/public/config/
+
+# exclude IDE etc.specific 
+.settings
+.project
+.buildpath
+
+# exclude project specific temp. deprecated resources
+*.depr
+/tmp
+
+# exclude 3rd party stuff
+/vendor
+composer.json
+composer.lock
+
+
