@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 /**
- * Bootstrapping for namespace /P7Graph/
+ * Bootstrapping for namespace /PictureWitch/
  *  
  * @package P7Graph
  * @author Sven Schrodt<sven@schrodt-service.net>
  * @version 0.1
- * @since 2020-02-19
- * @link https://github.com/svenschrodt/P7Graph
- * @license https://github.com/svenschrodt/P7Graph/blob/master/LICENSE.md
+ * @since 2020-03-11
+ * @link https://github.com/svenschrodt/PictureWitch
+ * @license https://github.com/svenschrodt/PictureWitch/blob/master/LICENSE.md
  * @copyright Sven Schrodt<sven@schrodt-service.net>
  */
                     

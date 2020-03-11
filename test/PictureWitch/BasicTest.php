@@ -3,7 +3,7 @@
  * Basic testing of PHPUnit's functionality
  * 
  * 
- * @link https://github.com/svenschrodt/P7Graph
+ * @link https://github.com/svenschrodt/PictureWitch
  * @author Sven Schrodt<sven@schrodt-service.net>
  * @package P7Tools
  * @license https://github.com/svenschrodt/P7Tools/blob/master/LICENSE.md
