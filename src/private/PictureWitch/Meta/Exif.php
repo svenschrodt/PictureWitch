@@ -11,9 +11,10 @@
  * @version 0.1
  * @since 2020-03-11
  * @link https://github.com/svenschrodt/PictureWitch
- * @link https://github.com/svenschrodt/PictureWitch/blob/master/README.md * @copyright Sven Schrodt<sven@schrodt-service.net>
+ * @link https://github.com/svenschrodt/PictureWitch/blob/master/README.md 
+ * @copyright Sven Schrodt<sven@schrodt-service.net>
  */
-namespace \PictureWitch\Meta;
+namespace PictureWitch\Meta;
 
 class Exif
 {

@@ -11,24 +11,24 @@
  * @copyright Sven Schrodt<sven@schrodt-service.net>
  */
                     
-define('P7T_NS', '\\P7Graph');
-define('P7T_LIB_DIR', 'P7Graph');
+define('PW_NS', '\\PictureWitch');
+define('PW_LIB_DIR', 'PictureWitch');
 
 /**
  * Auto loading for project classes 
  */
 spl_autoload_register(function ($className) {
     
-    // Check if namespace of class to be instantiated is belonging to us (P7Graph)
+    // Check if namespace of class to be instantiated is belonging to us (PW_LIB_DIR)
     
-    if (substr($className, 0, 7) === P7T_LIB_DIR) {
-        $file = 'src/' . str_replace('\\', '/', $className) . '.php';
-
+    if (substr($className, 0, strlen(PW_LIB_DIR)) === PW_LIB_DIR) {
+        $file = 'src/private/' . str_replace('\\', '/', $className) . '.php';
+        
         // Check if destination class file exists
         if (file_exists($file)) {
             require_once $file;
         } else { // trow exception, if not
-            throw new Exception("NO_SUCH_FILE_OR_DIRECTORY: {$className}");
+            throw new Exception("NO SUCH FILE OR DIRECTORY: {$file}");
         }
     }
     
